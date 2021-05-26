@@ -38,15 +38,25 @@ function validateStep(figure, cell){
 	}	
 	if(numRes === 2 || numRes === -2){
 		if(charRes === 2 || charRes === -2){
-//			valid = true;
-			console.log('Ход на две клетку')
+			let missCell = getMissCell(figure, cell);
+			let looseFigure = document.getElementsByClassName(missCell)
+			if(looseFigure.length){
+				let parent = document.querySelector('.chess__figures');
+				parent.removeChild(looseFigure[0]);				
+				valid = true;
+			}			
 		}
 	}
 	
 	return valid;
 }
 
-
+function getMissCell(figure, cell){
+	let char = (figure[0].charCodeAt() + cell[0].charCodeAt())/2;
+	char = String.fromCharCode(+char);
+	let num = (+figure[1] + +cell[1]) / 2
+	return char+num
+}
 
 
 
