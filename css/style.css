@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
+}
+.chess{
+    max-width: 1000px;
+    background-color: rgb(107, 41, 2);
+    margin: 0 auto;
+    padding: 30px;
+    position: relative;
+}
+.chess__board{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000;
+}
+.sell__item{
+    flex: 0 0 12.5%;
+    max-width: 12.5%;
+		position: relative;
+		z-index: 4;
+}
+.sell__item:after{
+    content: '';
+    display: block;
+    padding-top: 100%;
+}
+.sell__item:nth-child(2n + 1) {
+    background-color: #eee;
+}
+.sell__number{
+    position: absolute;
+    right: -20px;
+    font-size: 20px;
+    color: #fff;
+}
+.sell__letters{
+    position: absolute;
+    top: -25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+.sell__number:nth-of-type(1){
+    top: 5%
+}
+.sell__number:nth-of-type(2){
+    top: 18%
+}
+.sell__number:nth-of-type(3){
+    top: 30%
+}
+.sell__number:nth-of-type(4){
+    top: 43%
+}
+.sell__number:nth-of-type(5){
+    top: 55%
+}
+.sell__number:nth-of-type(6){
+    top: 68%
+}
+.sell__number:nth-of-type(7){
+    top: 80%
+}
+.sell__number:nth-of-type(8){
+    top: 93%
+}
+
+
+/* -------------------------------  FIGURES  */
+.chess__figures{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+}
+.figure__item{
+    position: absolute;
+    width: 12.5%;
+    padding: 1%;
+    transition: all 0.5s;
+		z-index: 5;
+}
+
+/* -------------------------------  POSITIONS  */
+.H8{
+    left: 87.5%;
+    top: 0;
+}
+.F8{
+    left: 62.5%;
+    top: 0;
+}
+.D8{
+    left: 37.5%;
+    top: 0;
+}
+.B8{
+    left: 12.5%;
+    top: 0;
+}
+.G7{
+    left: 75%;
+    top: 12.5%;
+}
+.E7{
+    left: 50%;
+    top: 12.5%;
+}
+.C7{
+    left: 25%;
+    top: 12.5%;
+}
+.A7{
+    left: 0;
+    top: 12.5%;
+}
+.H6{
+    left: 87.5%;
+    top: 25%;
+}
+.F6{
+    left: 62.5%;
+    top: 25%;
+}
+.D6{
+    left: 37.5%;
+    top: 25%;
+}
+.B6{
+    left: 12.5%;
+    top: 25%;
+}
+.G5{
+    left: 75%;
+    top: 37.5%;
+}
+.E5{
+    left: 50%;
+    top: 37.5%;
+}
+.C5{
+    left: 25%;
+    top: 37.5%;
+}
+.A5{
+    left: 0;
+    top: 37.5%;
+}
+.H4{
+    left: 87.5%;
+    top: 50%;
+}
+.F4{
+    left: 62.5%;
+    top: 50%;
+}
+.D4{
+    left: 37.5%;
+    top: 50%;
+}
+.B4{
+    left: 12.5%;
+    top: 50%;
+}
+.G3{
+    left: 75%;
+    top: 62.5%;
+}
+.E3{
+    left: 50%;
+    top: 62.5%;
+}
+.C3{
+    left: 25%;
+    top: 62.5%;
+}
+.A3{
+    left: 0;
+    top: 62.5%;
+}
+.H2{
+    left: 87.5%;
+    top: 75%;
+}
+.F2{
+    left: 62.5%;
+    top: 75%;
+}
+.D2{
+    left: 37.5%;
+    top: 75%;
+}
+.B2{
+    left: 12.5%;
+    top: 75%;
+}
+.G1{
+    left: 75%;
+    top: 87.5%;
+}
+.E1{
+    left: 50%;
+    top: 87.5%;
+}
+.C1{
+    left: 25%;
+    top: 87.5%;
+}
+.A1{
+    left: 0;
+    top: 87.5%;
+}
